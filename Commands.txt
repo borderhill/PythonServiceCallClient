@@ -1,0 +1,10 @@
+
+curl localhost:8080/servicecalls
+
+curl localhost:8080/servicecalls/250321616
+
+curl -X DELETE localhost:8080/servicecalls/250321616
+
+python scripts/servicecallsload.py -i ./data/Law_Enforcement_Dispatched_Calls_for_Service__Closed_20260302.csv -c 4
+
+python scripts/servicecallsupdate.py -i ./data/Law_Enforcement_Dispatched_Calls_for_Service__Closed_20260302.csv -c 4
